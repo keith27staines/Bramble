@@ -11,7 +11,8 @@ import SwiftUI
 struct BrambleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen()
         }
+        .windowToolbarStyle(.unifiedCompact) // Apply toolbar style here
     }
 }

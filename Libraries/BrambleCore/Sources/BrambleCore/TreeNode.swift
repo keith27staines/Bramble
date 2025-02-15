@@ -5,7 +5,6 @@
 //  Created by Keith Staines on 15/02/2025.
 //
 
-
 /// A node in a tree structure, where each node holds a value and can have child nodes.
 @available(macOS 10.15, *)
 public final class TreeNode<Value: Codable & Identifiable>: Codable, Identifiable where Value.ID: Codable {
