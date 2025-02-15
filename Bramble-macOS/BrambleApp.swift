@@ -13,6 +13,6 @@ struct BrambleApp: App {
         WindowGroup {
             MainScreen()
         }
-        .windowToolbarStyle(.unifiedCompact) // Apply toolbar style here
+        .windowToolbarStyle(.unifiedCompact)
     }
 }

@@ -1,3 +1,12 @@
+//
+//  TicketBoardView.swift
+//  Bramble
+//
+//  Created by Keith Staines on 15/02/2025.
+//
+
+import SwiftUI
+
 struct TicketBoardView: View {
     @Binding var isInspectorVisible: Bool
     @State private var inspectorWidth: CGFloat = 300
