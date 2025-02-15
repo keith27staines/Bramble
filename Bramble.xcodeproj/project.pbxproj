@@ -6,43 +6,82 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EE0FD0E22D6082B6008F3DF9 /* BrambleCore in Frameworks */ = {isa = PBXBuildFile; productRef = EE0FD0E12D6082B6008F3DF9 /* BrambleCore */; };
+		EE729CAF2D6073C600121010 /* BrambleCore in Frameworks */ = {isa = PBXBuildFile; productRef = EE729CAE2D6073C600121010 /* BrambleCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		EE186A9C2D60546400D8134E /* PBXContainerItemProxy */ = {
+		EE729C4F2D605BB900121010 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE186A822D60546300D8134E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EE186A892D60546300D8134E;
-			remoteInfo = Bramble;
+			remoteInfo = "Bramble-macOS";
 		};
-		EE186AA62D60546400D8134E /* PBXContainerItemProxy */ = {
+		EE729C682D605E8900121010 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EE186A822D60546300D8134E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EE186A892D60546300D8134E;
-			remoteInfo = Bramble;
+			remoteGlobalIDString = EE729C572D605E8800121010;
+			remoteInfo = "Bramble-iPadOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE186A8A2D60546300D8134E /* Bramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bramble.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE186A9B2D60546400D8134E /* BrambleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrambleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE186AA52D60546400D8134E /* BrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE186A8A2D60546300D8134E /* Bramble-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bramble-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE729C4B2D605BB900121010 /* Bramble-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bramble-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE729C582D605E8800121010 /* Bramble-iPadOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bramble-iPadOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE729C672D605E8900121010 /* Bramble-iPadOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bramble-iPadOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE729C862D6063A200121010 /* Bramble-macOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Bramble-macOS.xctestplan"; path = "Test Plans/Bramble-macOS.xctestplan"; sourceTree = "<group>"; };
+		EE729CAC2D6065B900121010 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EE729C842D6060DB00121010 /* Exceptions for "BrambleTests" folder in "Bramble-macOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BrambleTests.swift,
+			);
+			target = EE729C4A2D605BB900121010 /* Bramble-macOSTests */;
+		};
+		EE729C852D6060DB00121010 /* Exceptions for "BrambleTests" folder in "Bramble-iPadOSTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BrambleTests.swift,
+			);
+			target = EE729C662D605E8900121010 /* Bramble-iPadOSTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EE186A8C2D60546300D8134E /* Bramble */ = {
+		EE186A8C2D60546300D8134E /* Bramble-macOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Bramble;
+			path = "Bramble-macOS";
 			sourceTree = "<group>";
 		};
 		EE186A9E2D60546400D8134E /* BrambleTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EE729C842D6060DB00121010 /* Exceptions for "BrambleTests" folder in "Bramble-macOSTests" target */,
+				EE729C852D6060DB00121010 /* Exceptions for "BrambleTests" folder in "Bramble-iPadOSTests" target */,
+			);
 			path = BrambleTests;
 			sourceTree = "<group>";
 		};
-		EE186AA82D60546400D8134E /* BrambleUITests */ = {
+		EE729C4C2D605BB900121010 /* Bramble-macOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BrambleUITests;
+			path = "Bramble-macOSTests";
+			sourceTree = "<group>";
+		};
+		EE729C592D605E8800121010 /* Bramble-iPadOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Bramble-iPadOS";
+			sourceTree = "<group>";
+		};
+		EE729C6A2D605E8900121010 /* Bramble-iPadOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Bramble-iPadOSTests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,17 +91,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE729CAF2D6073C600121010 /* BrambleCore in Frameworks */,
+				EE0FD0E22D6082B6008F3DF9 /* BrambleCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186A982D60546400D8134E /* Frameworks */ = {
+		EE729C482D605BB900121010 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186AA22D60546400D8134E /* Frameworks */ = {
+		EE729C552D605E8800121010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE729C642D605E8900121010 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,12 +120,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0FD0C22D607D21008F3DF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE186A812D60546300D8134E = {
 			isa = PBXGroup;
 			children = (
-				EE186A8C2D60546300D8134E /* Bramble */,
+				EE729CAC2D6065B900121010 /* .gitignore */,
+				EE729C862D6063A200121010 /* Bramble-macOS.xctestplan */,
+				EE186A8C2D60546300D8134E /* Bramble-macOS */,
+				EE729C592D605E8800121010 /* Bramble-iPadOS */,
 				EE186A9E2D60546400D8134E /* BrambleTests */,
-				EE186AA82D60546400D8134E /* BrambleUITests */,
+				EE729C4C2D605BB900121010 /* Bramble-macOSTests */,
+				EE729C6A2D605E8900121010 /* Bramble-iPadOSTests */,
+				EE0FD0C22D607D21008F3DF9 /* Frameworks */,
 				EE186A8B2D60546300D8134E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +145,10 @@
 		EE186A8B2D60546300D8134E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE186A8A2D60546300D8134E /* Bramble.app */,
-				EE186A9B2D60546400D8134E /* BrambleTests.xctest */,
-				EE186AA52D60546400D8134E /* BrambleUITests.xctest */,
+				EE186A8A2D60546300D8134E /* Bramble-macOS.app */,
+				EE729C4B2D605BB900121010 /* Bramble-macOSTests.xctest */,
+				EE729C582D605E8800121010 /* Bramble-iPadOS.app */,
+				EE729C672D605E8900121010 /* Bramble-iPadOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE186A892D60546300D8134E /* Bramble */ = {
+		EE186A892D60546300D8134E /* Bramble-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE186AAF2D60546400D8134E /* Build configuration list for PBXNativeTarget "Bramble" */;
+			buildConfigurationList = EE186AAF2D60546400D8134E /* Build configuration list for PBXNativeTarget "Bramble-macOS" */;
 			buildPhases = (
 				EE186A862D60546300D8134E /* Sources */,
 				EE186A872D60546300D8134E /* Frameworks */,
@@ -108,60 +169,84 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EE186A8C2D60546300D8134E /* Bramble */,
+				EE186A8C2D60546300D8134E /* Bramble-macOS */,
 			);
-			name = Bramble;
+			name = "Bramble-macOS";
 			packageProductDependencies = (
+				EE729CAE2D6073C600121010 /* BrambleCore */,
+				EE0FD0E12D6082B6008F3DF9 /* BrambleCore */,
 			);
 			productName = Bramble;
-			productReference = EE186A8A2D60546300D8134E /* Bramble.app */;
+			productReference = EE186A8A2D60546300D8134E /* Bramble-macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE186A9A2D60546400D8134E /* BrambleTests */ = {
+		EE729C4A2D605BB900121010 /* Bramble-macOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE186AB22D60546400D8134E /* Build configuration list for PBXNativeTarget "BrambleTests" */;
+			buildConfigurationList = EE729C512D605BB900121010 /* Build configuration list for PBXNativeTarget "Bramble-macOSTests" */;
 			buildPhases = (
-				EE186A972D60546400D8134E /* Sources */,
-				EE186A982D60546400D8134E /* Frameworks */,
-				EE186A992D60546400D8134E /* Resources */,
+				EE729C472D605BB900121010 /* Sources */,
+				EE729C482D605BB900121010 /* Frameworks */,
+				EE729C492D605BB900121010 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE186A9D2D60546400D8134E /* PBXTargetDependency */,
+				EE729C502D605BB900121010 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				EE186A9E2D60546400D8134E /* BrambleTests */,
+				EE729C4C2D605BB900121010 /* Bramble-macOSTests */,
 			);
-			name = BrambleTests;
+			name = "Bramble-macOSTests";
 			packageProductDependencies = (
 			);
-			productName = BrambleTests;
-			productReference = EE186A9B2D60546400D8134E /* BrambleTests.xctest */;
+			productName = "Bramble-macOSTests";
+			productReference = EE729C4B2D605BB900121010 /* Bramble-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EE186AA42D60546400D8134E /* BrambleUITests */ = {
+		EE729C572D605E8800121010 /* Bramble-iPadOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE186AB52D60546400D8134E /* Build configuration list for PBXNativeTarget "BrambleUITests" */;
+			buildConfigurationList = EE729C792D605E8A00121010 /* Build configuration list for PBXNativeTarget "Bramble-iPadOS" */;
 			buildPhases = (
-				EE186AA12D60546400D8134E /* Sources */,
-				EE186AA22D60546400D8134E /* Frameworks */,
-				EE186AA32D60546400D8134E /* Resources */,
+				EE729C542D605E8800121010 /* Sources */,
+				EE729C552D605E8800121010 /* Frameworks */,
+				EE729C562D605E8800121010 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE186AA72D60546400D8134E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				EE186AA82D60546400D8134E /* BrambleUITests */,
+				EE729C592D605E8800121010 /* Bramble-iPadOS */,
 			);
-			name = BrambleUITests;
+			name = "Bramble-iPadOS";
 			packageProductDependencies = (
 			);
-			productName = BrambleUITests;
-			productReference = EE186AA52D60546400D8134E /* BrambleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = "Bramble-iPadOS";
+			productReference = EE729C582D605E8800121010 /* Bramble-iPadOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE729C662D605E8900121010 /* Bramble-iPadOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE729C7C2D605E8A00121010 /* Build configuration list for PBXNativeTarget "Bramble-iPadOSTests" */;
+			buildPhases = (
+				EE729C632D605E8900121010 /* Sources */,
+				EE729C642D605E8900121010 /* Frameworks */,
+				EE729C652D605E8900121010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE729C692D605E8900121010 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EE729C6A2D605E8900121010 /* Bramble-iPadOSTests */,
+			);
+			name = "Bramble-iPadOSTests";
+			packageProductDependencies = (
+			);
+			productName = "Bramble-iPadOSTests";
+			productReference = EE729C672D605E8900121010 /* Bramble-iPadOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,13 +261,16 @@
 					EE186A892D60546300D8134E = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					EE186A9A2D60546400D8134E = {
+					EE729C4A2D605BB900121010 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = EE186A892D60546300D8134E;
 					};
-					EE186AA42D60546400D8134E = {
+					EE729C572D605E8800121010 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = EE186A892D60546300D8134E;
+					};
+					EE729C662D605E8900121010 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EE729C572D605E8800121010;
 					};
 				};
 			};
@@ -195,14 +283,18 @@
 			);
 			mainGroup = EE186A812D60546300D8134E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EE0FD0E02D6082B6008F3DF9 /* XCLocalSwiftPackageReference "Libraries/BrambleCore" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE186A8B2D60546300D8134E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE186A892D60546300D8134E /* Bramble */,
-				EE186A9A2D60546400D8134E /* BrambleTests */,
-				EE186AA42D60546400D8134E /* BrambleUITests */,
+				EE186A892D60546300D8134E /* Bramble-macOS */,
+				EE729C4A2D605BB900121010 /* Bramble-macOSTests */,
+				EE729C572D605E8800121010 /* Bramble-iPadOS */,
+				EE729C662D605E8900121010 /* Bramble-iPadOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,14 +307,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186A992D60546400D8134E /* Resources */ = {
+		EE729C492D605BB900121010 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186AA32D60546400D8134E /* Resources */ = {
+		EE729C562D605E8800121010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE729C652D605E8900121010 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,14 +338,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186A972D60546400D8134E /* Sources */ = {
+		EE729C472D605BB900121010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE186AA12D60546400D8134E /* Sources */ = {
+		EE729C542D605E8800121010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE729C632D605E8900121010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,15 +362,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EE186A9D2D60546400D8134E /* PBXTargetDependency */ = {
+		EE729C502D605BB900121010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE186A892D60546300D8134E /* Bramble */;
-			targetProxy = EE186A9C2D60546400D8134E /* PBXContainerItemProxy */;
+			target = EE186A892D60546300D8134E /* Bramble-macOS */;
+			targetProxy = EE729C4F2D605BB900121010 /* PBXContainerItemProxy */;
 		};
-		EE186AA72D60546400D8134E /* PBXTargetDependency */ = {
+		EE729C692D605E8900121010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE186A892D60546300D8134E /* Bramble */;
-			targetProxy = EE186AA62D60546400D8134E /* PBXContainerItemProxy */;
+			target = EE729C572D605E8800121010 /* Bramble-iPadOS */;
+			targetProxy = EE729C682D605E8900121010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,11 +498,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bramble/Bramble.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Bramble-macOS/Bramble.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bramble/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bramble-macOS/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4783BNZ95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -410,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.Bramble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -419,11 +525,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bramble/Bramble.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Bramble-macOS/Bramble.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bramble/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bramble-macOS/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4783BNZ95;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -437,11 +543,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.Bramble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		EE186AB32D60546400D8134E /* Debug */ = {
+		EE729C522D605BB900121010 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -449,17 +555,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4783BNZ95;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.BrambleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble-macOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble-macOS";
 			};
 			name = Debug;
 		};
-		EE186AB42D60546400D8134E /* Release */ = {
+		EE729C532D605BB900121010 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,45 +572,116 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4783BNZ95;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.BrambleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble-macOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble-macOS";
 			};
 			name = Release;
 		};
-		EE186AB62D60546400D8134E /* Debug */ = {
+		EE729C7A2D605E8A00121010 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bramble-iPadOS/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4783BNZ95;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.BrambleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-iPadOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Bramble;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EE186AB72D60546400D8134E /* Release */ = {
+		EE729C7B2D605E8A00121010 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bramble-iPadOS/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4783BNZ95;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-iPadOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE729C7D2D605E8A00121010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4783BNZ95;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafecoder.BrambleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-iPadOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Bramble;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble-iPadOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble-iPadOS";
+			};
+			name = Debug;
+		};
+		EE729C7E2D605E8A00121010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4783BNZ95;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cafecoder.Bramble-iPadOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bramble-iPadOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bramble-iPadOS";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -521,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE186AAF2D60546400D8134E /* Build configuration list for PBXNativeTarget "Bramble" */ = {
+		EE186AAF2D60546400D8134E /* Build configuration list for PBXNativeTarget "Bramble-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE186AB02D60546400D8134E /* Debug */,
@@ -530,25 +706,52 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE186AB22D60546400D8134E /* Build configuration list for PBXNativeTarget "BrambleTests" */ = {
+		EE729C512D605BB900121010 /* Build configuration list for PBXNativeTarget "Bramble-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE186AB32D60546400D8134E /* Debug */,
-				EE186AB42D60546400D8134E /* Release */,
+				EE729C522D605BB900121010 /* Debug */,
+				EE729C532D605BB900121010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE186AB52D60546400D8134E /* Build configuration list for PBXNativeTarget "BrambleUITests" */ = {
+		EE729C792D605E8A00121010 /* Build configuration list for PBXNativeTarget "Bramble-iPadOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE186AB62D60546400D8134E /* Debug */,
-				EE186AB72D60546400D8134E /* Release */,
+				EE729C7A2D605E8A00121010 /* Debug */,
+				EE729C7B2D605E8A00121010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE729C7C2D605E8A00121010 /* Build configuration list for PBXNativeTarget "Bramble-iPadOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE729C7D2D605E8A00121010 /* Debug */,
+				EE729C7E2D605E8A00121010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EE0FD0E02D6082B6008F3DF9 /* XCLocalSwiftPackageReference "Libraries/BrambleCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Libraries/BrambleCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE0FD0E12D6082B6008F3DF9 /* BrambleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BrambleCore;
+		};
+		EE729CAE2D6073C600121010 /* BrambleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BrambleCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE186A822D60546300D8134E /* Project object */;
 }

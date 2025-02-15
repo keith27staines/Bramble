@@ -1,0 +1,34 @@
+## Xcode / Build
+DerivedData/
+build/
+.build/
+
+# Product files
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+## Xcode user settings
+# Ignore user-specific Xcode files (xcuserdata)
+xcuserdata/
+
+# Ignore project user-specific settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Other Xcode project files
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Swift Package Manager
+# Ignore the generated SPM files
+.swiftpm/
+
+## macOS / System Files
+# macOS system files
+.DS_Store
+

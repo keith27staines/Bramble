@@ -1,18 +1,14 @@
 //
-//  BrambleTests.swift
-//  BrambleTests
+//  Bramble_iPadOSTests.swift
+//  Bramble-iPadOSTests
 //
 //  Created by Keith Staines on 15/02/2025.
 //
 
 import XCTest
-#if os(macOS)
-@testable import Bramble_macOS
-#elseif os(iOS)
 @testable import Bramble_iPadOS
-#endif
 
-final class BrambleTests: XCTestCase {
+final class Bramble_iPadOSTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,18 +1,13 @@
 //
-//  BrambleTests.swift
-//  BrambleTests
+//  Bramble_macOSTests.swift
+//  Bramble-macOSTests
 //
 //  Created by Keith Staines on 15/02/2025.
 //
 
 import XCTest
-#if os(macOS)
-@testable import Bramble_macOS
-#elseif os(iOS)
-@testable import Bramble_iPadOS
-#endif
 
-final class BrambleTests: XCTestCase {
+final class Bramble_macOSTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,7 +27,7 @@ final class BrambleTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

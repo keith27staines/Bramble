@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "AA286139-AC3A-4DD0-B48D-221FAF5A5DC8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Bramble.xcodeproj",
+      "identifier" : "EE186A892D60546300D8134E",
+      "name" : "Bramble-macOS"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Bramble.xcodeproj",
+        "identifier" : "EE729C4A2D605BB900121010",
+        "name" : "Bramble-macOSTests"
+      }
+    }
+  ],
+  "version" : 1
+}
