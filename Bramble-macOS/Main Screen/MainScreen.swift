@@ -14,6 +14,7 @@ struct MainScreen: View {
 
     var body: some View {
         TicketBoardView()
+            .background(Color.gray.opacity(0.1))
     }
 }
 

@@ -9,8 +9,16 @@ import SwiftUI
 
 struct MainGridView: View {
     var body: some View {
-        Color.red.overlay {
+        BackgroundColor
+            .primaryBackground
+            .color
+            .overlay {
             Text("Main Grid View")
+                .foregroundStyle(.primary)
         }
     }
+}
+
+#Preview {
+    MainGridView()
 }

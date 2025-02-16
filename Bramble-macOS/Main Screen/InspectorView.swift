@@ -9,6 +9,15 @@ import SwiftUI
 
 struct InspectorView: View {
     var body: some View {
-        Color.blue
+        BackgroundColor
+            .formBackground.color
+            .overlay {
+            Text("Inspector")
+                .foregroundStyle(.primary)
+        }
     }
+}
+
+#Preview {
+    InspectorView()
 }

@@ -9,6 +9,17 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text("Header")
+        BackgroundColor
+            .secondaryBackground
+            .color
+            .overlay {
+            Text("Header")
+                .foregroundStyle(.primary)
+        }
+            .frame(height: 44)
     }
+}
+
+#Preview {
+    HeaderView()
 }

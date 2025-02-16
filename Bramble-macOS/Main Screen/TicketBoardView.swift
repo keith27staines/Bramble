@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BrambleCore
 
 struct TicketBoardView: View {
     @State private var inspectorWidth: CGFloat = 300
@@ -54,7 +55,8 @@ extension TicketBoardView {
                 .gesture(DragGesture()
                     .onChanged { gesture in
                         let newWidth = inspectorWidth - gesture.translation.width
-                        inspectorWidth = min(max(newWidth, minInspectorWidth), maxInspectorWidth)
+                        inspectorWidth = newWidth.clamped(to: minInspectorWidth...maxInspectorWidth)
+                        //min(max(newWidth, minInspectorWidth), maxInspectorWidth)
                     })
             
             InspectorView()
