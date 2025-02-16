@@ -9,6 +9,6 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text("Header Area")
+        Text("Header")
     }
 }

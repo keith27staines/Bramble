@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MainGridView: View {
     var body: some View {
-        Spacer()
-        Text("Main Grid Area")
-        Spacer()
+        Color.red.overlay {
+            Text("Main Grid View")
+        }
     }
 }

@@ -9,6 +9,6 @@ import SwiftUI
 
 struct InspectorView: View {
     var body: some View {
-        Text("Inspector Area")
+        Color.blue
     }
 }

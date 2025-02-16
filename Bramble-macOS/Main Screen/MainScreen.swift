@@ -13,14 +13,7 @@ struct MainScreen: View {
     @State private var isInspectorVisible = true
 
     var body: some View {
-        TicketBoardView(isInspectorVisible: $isInspectorVisible)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    Button(action: { isInspectorVisible.toggle() }) {
-                        Image(systemName: isInspectorVisible ? "sidebar.trailing" : "sidebar.leading")
-                    }
-                }
-            }
+        TicketBoardView()
     }
 }
 
