@@ -71,3 +71,13 @@ enum TextColor {
         }
     }
 }
+
+extension Color {
+    static let pastelBlue = Color(red: 0.68, green: 0.85, blue: 0.90)
+    static let pastelYellow = Color(red: 0.98, green: 0.94, blue: 0.53)
+    static let pastelGreen = Color(red: 0.60, green: 0.87, blue: 0.68)
+    static let pastelPink = Color(red: 0.99, green: 0.80, blue: 0.85)
+    static let pastelRed = Color(red: 0.98, green: 0.73, blue: 0.73)
+    static let pastelPurple = Color(red: 0.80, green: 0.75, blue: 0.98)
+    static let pastelGray = Color(red: 0.85, green: 0.85, blue: 0.85)
+}

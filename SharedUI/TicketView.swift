@@ -10,8 +10,8 @@ import BrambleCore
 
 /// A SwiftUI view for displaying and interacting with a ticket.
 public struct TicketView: View {
-    
-    /// The view model responsible for managing the ticket's state and actions.
+
+    @FocusState private var isTitleFocused: Bool
     @StateObject private var viewModel: TicketViewModel
     
     /// Initializes the view with a ticket and a repository.
@@ -24,17 +24,40 @@ public struct TicketView: View {
     }
     
     public var body: some View {
-        VStack {
-            TextField("Title", text: $viewModel.ticket.title)
-                .padding()
-                .border(Color.gray)
+        ZStack {
+            // Use state color as the background
+            RoundedRectangle(cornerRadius: 16)
+                .fill(viewModel.ticket.state.stateColor)
+                .shadow(color: .black.opacity(viewModel.isSelected ? 0.2 : 0), radius: viewModel.isSelected ? 10 : 0)
             
-            Text("State: \(viewModel.ticket.state.rawValue)")
+            VStack {
+                titleField
 
-            TicketStatePicker(currentState: $viewModel.ticket.state)
-                .padding()
+                TicketStatePicker(currentState: $viewModel.ticket.state)
+                    .frame(width: 150)
+                    .padding()
+            }
+            .padding()
         }
         .padding()
+        .onTapGesture {
+            viewModel.toggleIsSelected()
+            if isTitleFocused {
+                isTitleFocused = false
+            }
+        }
+    }
+    
+    var titleField: some View {
+        TextField("Some interesting title", text: $viewModel.ticket.title)
+            .font(.system(size: 24))
+            .multilineTextAlignment(isTitleFocused ? .center : .leading)
+            .minimumScaleFactor(0.5)
+            .lineLimit(1)
+            .allowsTightening(true)
+            .focused($isTitleFocused)
+            .padding()
+            .background(Color.white.opacity(0.5))
     }
 }
 

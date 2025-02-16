@@ -85,6 +85,7 @@
 			membershipExceptions = (
 				Colors.xcassets,
 				ColorScheme.swift,
+				"TicketState+Colors.swift",
 				TicketStatePicker.swift,
 				TicketView.swift,
 			);
@@ -95,6 +96,7 @@
 			membershipExceptions = (
 				Colors.xcassets,
 				ColorScheme.swift,
+				"TicketState+Colors.swift",
 				TicketStatePicker.swift,
 				TicketView.swift,
 			);

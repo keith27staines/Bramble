@@ -12,6 +12,9 @@ import BrambleCore
 @MainActor
 public class TicketViewModel: ObservableObject {
     
+    /// Informs the view whether to present in an isSelected state or not
+    @Published public private(set) var isSelected: Bool = false
+    
     /// The current ticket being managed by the view model.
     @Published public var ticket: Ticket
     
@@ -42,6 +45,10 @@ public class TicketViewModel: ObservableObject {
     public func updateTicketTitle(to title: String) {
         ticket.title = title
         _ = repository.saveTicket(ticket)
+    }
+    
+    public func toggleIsSelected() {
+        isSelected.toggle()
     }
 }
 
