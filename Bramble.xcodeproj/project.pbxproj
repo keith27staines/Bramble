@@ -52,11 +52,41 @@
 			);
 			target = EE729C662D605E8900121010 /* Bramble-iPadOSTests */;
 		};
+		EEC6E1572D620E0600A55A45 /* Exceptions for "LogicLayer" folder in "Bramble-macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TicketViewModel.swift,
+			);
+			target = EE186A892D60546300D8134E /* Bramble-macOS */;
+		};
+		EEC6E1582D620E0600A55A45 /* Exceptions for "LogicLayer" folder in "Bramble-iPadOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TicketViewModel.swift,
+			);
+			target = EE729C572D605E8800121010 /* Bramble-iPadOS */;
+		};
+		EEC6E15B2D620F6000A55A45 /* Exceptions for "DataLayer" folder in "Bramble-macOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				InMemoryTicketRepository.swift,
+			);
+			target = EE186A892D60546300D8134E /* Bramble-macOS */;
+		};
+		EEC6E15C2D620F6000A55A45 /* Exceptions for "DataLayer" folder in "Bramble-iPadOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				InMemoryTicketRepository.swift,
+			);
+			target = EE729C572D605E8800121010 /* Bramble-iPadOS */;
+		};
 		EEF7C42C2D61DBFE00A1B34B /* Exceptions for "SharedUI" folder in "Bramble-macOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Colors.xcassets,
 				ColorScheme.swift,
+				TicketStatePicker.swift,
+				TicketView.swift,
 			);
 			target = EE186A892D60546300D8134E /* Bramble-macOS */;
 		};
@@ -65,6 +95,8 @@
 			membershipExceptions = (
 				Colors.xcassets,
 				ColorScheme.swift,
+				TicketStatePicker.swift,
+				TicketView.swift,
 			);
 			target = EE729C572D605E8800121010 /* Bramble-iPadOS */;
 		};
@@ -98,6 +130,24 @@
 		EE729C6A2D605E8900121010 /* Bramble-iPadOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Bramble-iPadOSTests";
+			sourceTree = "<group>";
+		};
+		EEC6E14E2D620C8E00A55A45 /* DataLayer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EEC6E15B2D620F6000A55A45 /* Exceptions for "DataLayer" folder in "Bramble-macOS" target */,
+				EEC6E15C2D620F6000A55A45 /* Exceptions for "DataLayer" folder in "Bramble-iPadOS" target */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		EEC6E1502D620D2000A55A45 /* LogicLayer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EEC6E1572D620E0600A55A45 /* Exceptions for "LogicLayer" folder in "Bramble-macOS" target */,
+				EEC6E1582D620E0600A55A45 /* Exceptions for "LogicLayer" folder in "Bramble-iPadOS" target */,
+			);
+			path = LogicLayer;
 			sourceTree = "<group>";
 		};
 		EEF7C4282D61DBC600A1B34B /* SharedUI */ = {
@@ -155,6 +205,8 @@
 		EE186A812D60546300D8134E = {
 			isa = PBXGroup;
 			children = (
+				EEC6E1502D620D2000A55A45 /* LogicLayer */,
+				EEC6E14E2D620C8E00A55A45 /* DataLayer */,
 				EEF7C4282D61DBC600A1B34B /* SharedUI */,
 				EE729CAC2D6065B900121010 /* .gitignore */,
 				EE729C862D6063A200121010 /* Bramble-macOS.xctestplan */,

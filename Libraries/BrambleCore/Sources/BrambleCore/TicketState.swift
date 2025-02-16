@@ -1,15 +1,15 @@
 //
-//  State.swift
+//  TicketState.swift
 //  BrambleCore
 //
 //  Created by Keith Staines on 15/02/2025.
 //
 
-/// Represents the different states a `Ticket` can be in throughout its lifecycle.
+/// Represents the different states a ``Ticket`` can be in throughout its lifecycle.
 ///
 /// `TicketState` is used to track the progress of a ticket in a workflow or task management system.
 /// It conforms to `Codable` for easy serialization and `Equatable` for state comparisons.
-public enum TicketState: Codable, Equatable {
+public enum TicketState: String, Identifiable, Codable, Equatable, CaseIterable {
     
     /// The ticket has been created but has not yet been scheduled for work.
     case new
@@ -31,5 +31,8 @@ public enum TicketState: Codable, Equatable {
 
     /// The ticket has been cancelled and will not be completed.
     case cancelled
+    
+    /// Returns the identifier of the case
+    public var id: String { rawValue }
 }
 
